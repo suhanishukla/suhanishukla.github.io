@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 215 100% 6%;
+    --foreground: 180 100% 90%;
+
+    --card: 215 50% 10%;
+    --card-foreground: 180 100% 90%;
+
+    --popover: 215 50% 10%;
+    --popover-foreground: 180 100% 90%;
+
+    --primary: 271 81% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 158 64% 52%;
+    --secondary-foreground: 215 100% 6%;
+
+    --muted: 215 30% 20%;
+    --muted-foreground: 180 20% 70%;
+
+    --accent: 271 81% 56%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 30% 18%;
+    --input: 215 30% 18%;
+    --ring: 271 81% 56%;
+
+    --radius: 0.75rem;
+
+    --gradient-primary: linear-gradient(135deg, hsl(271 81% 56%), hsl(215 100% 50%));
+    --gradient-secondary: linear-gradient(135deg, hsl(158 64% 52%), hsl(271 81% 56%));
+    --gradient-accent: linear-gradient(90deg, hsl(215 100% 6%), hsl(215 50% 10%));
+
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 215 50% 10%;
+    --sidebar-foreground: 180 100% 90%;
+    --sidebar-primary: 271 81% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 30% 20%;
+    --sidebar-accent-foreground: 180 100% 90%;
+    --sidebar-border: 215 30% 18%;
+    --sidebar-ring: 271 81% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
