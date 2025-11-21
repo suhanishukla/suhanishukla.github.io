@@ -24,9 +24,6 @@ const Hero = () => {
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent animate-fade-in">
           Suhani Shukla
         </h1>
-        <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          Full Stack Developer & Creative Designer
-        </p>
         <div className="flex gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <Button 
             size="lg"

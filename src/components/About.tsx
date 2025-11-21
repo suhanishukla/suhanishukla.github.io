@@ -28,9 +28,8 @@ const About = () => {
         
         <div className="mb-16 text-center max-w-3xl mx-auto">
           <p className="text-lg text-foreground/80 leading-relaxed">
-            I'm a passionate developer with a keen eye for design. I love crafting elegant solutions 
-            to complex problems and bringing ideas to life through code. With expertise in modern 
-            web technologies, I strive to create experiences that are both beautiful and functional.
+            I'm studying CS and Entrepreneurship at UCLA. I'm interested in cloud and systems engineering, AI, and love blending
+            creativity with analytical problem-solving. Some of my hobbies include reading, classical music, and film reviewing.
           </p>
         </div>
 
