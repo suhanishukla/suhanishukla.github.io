@@ -1,18 +1,24 @@
-name: Deploy Vite Site
+name: Deploy Vite to GitHub Pages
 
 on:
   push:
     branches: ["main"]
 
+# Required to allow deployment
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Check out repository
+      - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20
@@ -20,11 +26,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build
+      - name: Build project
         run: npm run build
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
           folder: dist
+          branch: gh-pages
+          clean: true
+          token: ${{ secrets.GITHUB_TOKEN }}
