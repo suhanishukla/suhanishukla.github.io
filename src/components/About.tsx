@@ -1,14 +1,14 @@
-import { Code2, Palette, Rocket } from "lucide-react";
+import { Brain, Cpu, Rocket } from "lucide-react";
 
 const About = () => {
   const features = [
     {
-      icon: Code2,
+      icon: Cpu,
       title: "Engineering",
       description: "Backend engineering, AWS infrastructure, and reliable systems."
     },
     {
-      icon: Palette,
+      icon: Brain,
       title: "AI + Systems",
       description: "Integrating intelligent components into real-world systems."
     },
