@@ -4,18 +4,18 @@ const About = () => {
   const features = [
     {
       icon: Code2,
-      title: "Development",
-      description: "Building scalable web applications with modern technologies and best practices."
+      title: "Engineering",
+      description: "Backend engineering, AWS infrastructure, and systems that need to be reliable, scalable, and production-ready."
     },
     {
       icon: Palette,
-      title: "Design",
-      description: "Creating beautiful, intuitive user interfaces that users love to interact with."
+      title: "AI + Systems",
+      description: "Integrating intelligent components into real-world systems."
     },
     {
       icon: Rocket,
-      title: "Innovation",
-      description: "Always learning and exploring new technologies to deliver cutting-edge solutions."
+      title: "Learning",
+      description: "Building projects to push my skills and learn new tools."
     }
   ];
 
