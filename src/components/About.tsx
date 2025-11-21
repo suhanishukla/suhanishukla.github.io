@@ -5,8 +5,7 @@ const About = () => {
     {
       icon: Code2,
       title: "Engineering",
-      description: "Backend engineering, AWS infrastructure, and systems that need to be reliable, scalable, and production-ready."
-    },
+      description: "Backend engineering, AWS infrastructure, and reliable systems."
     {
       icon: Palette,
       title: "AI + Systems",
