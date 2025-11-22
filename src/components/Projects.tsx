@@ -35,7 +35,7 @@ const Experience = () => {
       • Streamlined control flow of critical hardware tests
       • Created custom signal handler integrated with Python front-end to add proper termination with control C
       • Strengthened debugging & test automation  `,
-      skills: ["C++", "Python", "gRPC", "Linux", "Bash scripting"],
+      skills: ["C++", "Python", "gRPC", "Linux", "Bash Scripting"],
       color: "from-accent to-secondary"
     },
     {
