@@ -110,7 +110,7 @@ const Experience = () => {
       company: "Amazon Web Services",
       role: "Software Engineering Intern",
       period: "Summer 2025",
-      description: "Worked on cloud infrastructure automation to improve reliability and deployment workflows.",
+      description: "Automated cloud infrastructure to improve reliability and deployment workflows.",
       details: `
       • Built Live Pipeline Template automation using CDK + Ruby  
       • Designed canary rollback monitoring  
