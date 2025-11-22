@@ -28,9 +28,9 @@ const Hero = () => {
           <Button 
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground transition-all duration-300 hover:scale-105"
-            onClick={() => scrollToSection('projects')}
+            onClick={() => scrollToSection('about')}
           >
-            View My Work
+            Learn More
           </Button>
           <Button 
             size="lg"
