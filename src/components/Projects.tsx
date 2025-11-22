@@ -211,38 +211,40 @@ const Experience = () => {
                 </CardContent>
               </Card>
             )}
-
             {/* === EXPANDED FULL SCREEN CARD === */}
             {expanded === index && (
               <div
                 className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md p-6 flex justify-center overflow-y-auto"
-                onClick={() => setExpanded(null)} // CLICK OUTSIDE CLOSES
+                onClick={() => setExpanded(null)}
               >
                 <Card
-                  className="bg-card border-border max-w-3xl w-full mt-10 mb-10 animate-in fade-in zoom-in duration-300"
-                  onClick={(e) => e.stopPropagation()} // PREVENT CLICK INSIDE FROM CLOSING
+                  className="bg-card border-border max-w-3xl w-full mt-10 mb-10 animate-in fade-in zoom-in duration-300 
+                            text-center p-6"
+                  onClick={(e) => e.stopPropagation()}
                 >
-                  <CardHeader>
-                    <div className={`h-2 w-full bg-gradient-to-r ${exp.color} rounded-full mb-4`} />
-                    <CardTitle className="text-3xl font-bold text-primary">
+                  <CardHeader className="text-center">
+                    <div className={`h-2 w-full bg-gradient-to-r ${exp.color} rounded-full mb-6`} />
+
+                    <CardTitle className="text-4xl font-bold text-primary mb-2">
                       {exp.company}
                     </CardTitle>
-                    <CardDescription className="text-foreground/80 text-lg mt-1">
+
+                    <CardDescription className="text-2xl text-foreground/80 mt-1">
                       {exp.role} • {exp.period}
                     </CardDescription>
                   </CardHeader>
 
-                  <CardContent>
-                    <p className="whitespace-pre-line text-foreground/90 leading-relaxed text-md mb-6">
+                  <CardContent className="text-center">
+                    <p className="whitespace-pre-line text-foreground/90 leading-relaxed text-xl mb-8">
                       {exp.details}
                     </p>
 
-                    {/* SKILLS SECTION */}
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    {/* SKILLS – centered + larger */}
+                    <div className="flex flex-wrap justify-center gap-3 mb-4">
                       {exp.skills?.map((skill, i) => (
                         <span
                           key={i}
-                          className="px-3 py-1 bg-muted text-foreground text-sm rounded-full border border-border"
+                          className="px-4 py-2 bg-muted text-foreground text-md rounded-full border border-border"
                         >
                           {skill}
                         </span>
@@ -252,6 +254,7 @@ const Experience = () => {
                 </Card>
               </div>
             )}
+
 
 
           </div>
