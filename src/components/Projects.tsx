@@ -117,11 +117,10 @@ const Experience = () => {
       • Designed real-time canary rollback monitoring and composite alarms for safe deployments
       • Reduced deployment freshness from 120 days to less than 28 days  
       • Improved pipeline reliability and observability  
-      • Collaborated with SDEs across Redshift Console  
-      • Authored detailed runbooks and docs for on-call engineers and future incidents
+      • Authored detailed runbooks and docs for on-call engineers
       `,
-      skills: ["CDK", "LPT", "Ruby", "TypeScript", "CloudWatch"],
-      color: "from-primary to-accent"
+      skills: ["CDK", "LPT", "Ruby", "TypeScript", "CloudWatch", "Technical Writing"],
+      color: "from-secondary to-primary"
     },
     {
       company: "Nokia",
@@ -164,7 +163,8 @@ const Experience = () => {
       • Leading technical workshops to teach members basics of AWS, cloud computing, and AI/ML 
       • Creating AWS-hosted projects to demonstrate cloud computing  
       `,
-      color: "from-accent to-primary"
+      skills: ["Workshop Creation", "S3", "Lambda", "AWS Bedrock", "Outreach"],
+      color: "from-secondary to-primary"
     },
     {
       company: "BruinAI",
@@ -179,7 +179,7 @@ const Experience = () => {
       • Collaborated with Anderson MBAs at startup Nortera, using Agile Scrum translating complex HR compliance and EDI data into scalable, data-driven dashboards for risk detection
       `, 
       skills: ["Agile Scrum", "Python", "PyTorch", "LLMs/RAG", "Event Planning"],
-      color: "from-primary to-accent"
+      color: "from-secondary to-primary"
     }
   ];
 
