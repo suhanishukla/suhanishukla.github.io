@@ -147,8 +147,8 @@ Error generating stack: `+i.message+`
       • Strengthened debugging & test automation  `,skills:["C++","Python","gRPC","Linux","Bash scripting"],color:"from-accent to-secondary"},{company:"NASA SEES",role:"Research Intern",period:"Summer 2022",description:"Created image filtering and ML-based classification tools for environmental data.",details:`
       • Wrote Python image filtering scripts to classify and sort mosquito larvae data
       • Co-authored research paper on the accuracy of classifying larvae images using CNNs 
-      • Acted as lead speaker during a virtual presentation of research poster at American Geophysical Union Fall 2022 Conference. 
-      `,skills:["Python","PyTorch","CNNs/CV","Data cleaning"],color:"from-secondary to-primary"},{company:"AWS Cloud Club @ UCLA",role:"Technical Director",period:"2024–Present",description:"Teach cloud concepts, build AWS-powered solutions, and run technical programs.",color:"from-accent to-primary"},{company:"BruinAI",role:"AI Consultant & Events Lead",period:"2024–Present",description:"Lead technical workshops, architect ML projects, and support AI initiatives across UCLA.",details:`
+      • Acted as lead speaker during a virtual presentation of research poster at American Geophysical Union Fall 2022 Conference
+      `,skills:["Python","PyTorch","CNNs/CV","Data cleaning"],color:"from-secondary to-primary"},{company:"AWS Cloud Club @ UCLA",role:"Technical Director",period:"2025–Present",description:"Teach cloud concepts, build AWS-powered solutions, and run technical programs.",color:"from-accent to-primary"},{company:"BruinAI",role:"AI Consultant & Events Lead",period:"2023–Present",description:"Architect ML projects and support AI initiatives across UCLA.",details:`
       • Spearheaded UCLA’s first AI club’s external strategy
       • Led partnerships and high-visibility events with DeepLearning.AI, Cisco, and other industry leaders
       • Proposed AI-driven enhancements for social media startup Carrot, ensuring user-centric design and technical feasibility 
