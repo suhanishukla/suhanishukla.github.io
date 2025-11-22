@@ -33,6 +33,20 @@ const About = () => {
           </p>
         </div>
 
+        <div className="flex justify-center mt-4">
+          <a
+            href="https://lily-power-22d.notion.site/Suhani-s-Blog-2138ee31aa6b80f1ba38c05c15c4db5f"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500/20 to-blue-500/20 
+                      text-primary font-medium backdrop-blur-md border border-white/10
+                      hover:scale-105 transition-all duration-200 shadow-lg"
+          >
+            My Blog!
+          </a>
+        </div>
+
+
         <div className="grid md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div 
