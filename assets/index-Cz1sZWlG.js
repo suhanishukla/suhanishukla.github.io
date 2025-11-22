@@ -140,7 +140,6 @@ Error generating stack: `+i.message+`
       • Migrated legacy LPT pipeline to CDK to modernize Infrastructure as Code scheme 
       • Designed real-time canary rollback monitoring and composite alarms for safe deployments
       • Reduced deployment freshness from 120 days to less than 28 days  
-      • Improved pipeline reliability and observability  
       • Authored detailed runbooks and docs for on-call engineers
       `,skills:["CDK","LPT","Ruby","TypeScript","CloudWatch","Technical Writing"],color:"from-secondary to-primary"},{company:"Nokia",role:"Software Engineering Intern",period:"Summer 2024",description:"Developed hardware diagnostics tools using C++ and gRPC streaming systems.",details:`
       • Developed improvements to hardware custom CLI Diags
