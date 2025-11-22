@@ -1,49 +1,35 @@
 const Skills = () => {
-  // const skills = [
-  //   { name: "React", level: 90 },
-  //   { name: "TypeScript", level: 85 },
-  //   { name: "Node.js", level: 80 },
-  //   { name: "UI/UX Design", level: 85 },
-  //   { name: "Tailwind CSS", level: 95 },
-  //   { name: "PostgreSQL", level: 75 },
-  // ];
+
 
   return (
-    <a 
-      href="../../public/suhani-shukla-resume.pdf" 
-      target="_blank"
-      rel="noopener noreferrer"
-      className="block text-center text-4xl md:text-5xl font-bold 
-                bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent 
-                hover:opacity-80 transition-opacity duration-200 cursor-pointer"
-    >
-      My Resume
-    </a>
+    // <a 
+    //   href="../../public/suhani-shukla-resume.pdf" 
+    //   target="_blank"
+    //   rel="noopener noreferrer"
+    //   className="block text-center text-4xl md:text-5xl font-bold 
+    //             bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent 
+    //             hover:opacity-80 transition-opacity duration-200 cursor-pointer"
+    // >
+    //   My Resume
+    // </a>
+    <section id="resume" className="py-24 px-6">
+      {/* TITLE */}
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 
+                      bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+        My Resume
+      </h2>
 
-    // <section id="skills" className="py-20 px-6 bg-gradient-accent">
-    //   <div className="container mx-auto max-w-4xl">
-    //     <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-secondary bg-clip-text text-transparent">
-    //       Skills & Expertise
-    //     </h2>
-        
-    //     <div className="space-y-6">
-    //       {skills.map((skill, index) => (
-    //         <div key={index} className="group">
-    //           <div className="flex justify-between mb-2">
-    //             <span className="text-foreground font-medium">{skill.name}</span>
-    //             <span className="text-foreground/70">{skill.level}%</span>
-    //           </div>
-    //           <div className="h-3 bg-muted rounded-full overflow-hidden">
-    //             <div 
-    //               className="h-full bg-gradient-secondary rounded-full transition-all duration-1000 ease-out group-hover:scale-105 origin-left"
-    //               style={{ width: `${skill.level}%` }}
-    //             />
-    //           </div>
-    //         </div>
-    //       ))}
-    //     </div>
-    //   </div>
-    // </section>
+      {/* PDF VIEWER BOX */}
+      <div className="max-w-4xl mx-auto bg-card border border-border rounded-xl shadow-xl 
+                      p-4 h-[80vh]">
+        <iframe
+          src="../../public/suhani-shukla-resume.pdf"
+          title="Suhani Shukla Resume"
+          className="w-full h-full rounded-lg"
+        />
+      </div>
+    </section>
+
   );
 };
 
