@@ -26,14 +26,14 @@ const About = () => {
           About Me
         </h2>
         
-        <div className="mb-16 text-center max-w-3xl mx-auto">
+        <div className="mb-8 text-center max-w-3xl mx-auto">
           <p className="text-lg text-foreground/80 leading-relaxed">
             I'm studying CS and Entrepreneurship at UCLA. I'm interested in cloud and systems engineering, AI, and love blending
             creativity with analytical problem-solving. Some of my hobbies include reading, classical music, and film reviewing.
           </p>
         </div>
 
-        <div className="flex justify-center mt-2 mb-14">
+        <div className="flex justify-center mt-2 mb-20">
           <Button
             size="lg"
             variant="outline"
