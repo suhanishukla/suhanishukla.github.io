@@ -54,7 +54,7 @@ Message: ${formData.message}`
         <div className="grid md:grid-cols-2 gap-12">
           
           {/* SOCIAL LINKS */}
-          <div className="mt-20 ml-10">
+          <div className="mt-20 ml-20">
             <h3 className="text-2xl font-semibold mb-4 text-foreground">
               Feel free to reach out!
             </h3>
