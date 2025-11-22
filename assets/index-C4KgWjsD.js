@@ -149,7 +149,7 @@ Error generating stack: `+i.message+`
       • Implemented gRPC bidirectional streaming in all prints and ASIC tests
       • Streamlined control flow of critical hardware tests
       • Created custom signal handler integrated with Python front-end to add proper termination with control C
-      • Strengthened debugging & test automation  `,skills:["C++","Python","gRPC","Linux","Bash scripting"],color:"from-accent to-secondary"},{company:"NASA SEES",role:"Research Intern",period:"Summer 2022",description:"Created image filtering and ML-based classification tools for environmental data.",details:`
+      • Strengthened debugging & test automation  `,skills:["C++","Python","gRPC","Linux","Bash Scripting"],color:"from-accent to-secondary"},{company:"NASA SEES",role:"Research Intern",period:"Summer 2022",description:"Created image filtering and ML-based classification tools for environmental data.",details:`
       • Wrote Python image filtering scripts to classify and sort mosquito larvae data
       • Co-authored research paper on the accuracy of classifying larvae images using CNNs 
       • Acted as lead speaker during a virtual presentation of research poster at American Geophysical Union Fall 2022 Conference
