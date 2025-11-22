@@ -55,7 +55,7 @@ Message: ${formData.message}`
           
           {/* SOCIAL LINKS */}
           <div className="mt-20 ml-24">
-            <h3 className="text-2xl font-semibold mb-4 text-foreground justify-center">
+            <h3 className="text-2xl font-semibold mb-4 text-foreground text-center">
               Feel free to reach out!
             </h3>
             
