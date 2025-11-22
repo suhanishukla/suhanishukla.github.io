@@ -1,4 +1,5 @@
 import { Brain, Cpu, Rocket } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const About = () => {
   const features = [
