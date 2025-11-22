@@ -234,12 +234,18 @@ const Experience = () => {
                     </CardDescription>
                   </CardHeader>
 
-                  <CardContent className="flex flex-col items-center">
-                    <p className="whitespace-pre-line text-foreground/90 leading-relaxed text-xl mb-8 text-left w-full max-w-2xl mx-auto">
-                      {exp.details}
-                    </p>
+                  <CardContent className="flex flex-col items-start px-10">
 
-                    <div className="flex flex-wrap justify-center gap-3 mb-4">
+                    {/* DESCRIPTION — SHIFTED UP & RIGHT */}
+                    <div className="w-full max-w-2xl">
+                      <p className="whitespace-pre-line text-foreground/90 leading-relaxed text-xl mb-8 text-left 
+                                  -mt-2 ml-4">
+                        {exp.details}
+                      </p>
+                    </div>
+
+                    {/* SKILLS — aligned to left under description */}
+                    <div className="flex flex-wrap gap-3 mb-4 ml-4">
                       {exp.skills?.map((skill, i) => (
                         <span
                           key={i}
@@ -249,7 +255,9 @@ const Experience = () => {
                         </span>
                       ))}
                     </div>
-                  </CardContent>
+
+                    </CardContent>
+
                 </Card>
               </div>
             )}
