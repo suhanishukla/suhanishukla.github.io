@@ -49,7 +49,7 @@ const Experience = () => {
       • Co-authored research paper on the accuracy of classifying larvae images using CNNs 
       • Acted as lead speaker during a virtual presentation of research poster at American Geophysical Union Fall 2022 Conference
       `,
-      skills: ["Python", "PyTorch", "CNNs/CV", "Data cleaning"],
+      skills: ["Python", "PyTorch", "CNNs/CV", "Data Cleaning"],
       color: "from-secondary to-primary"
     },
     {
