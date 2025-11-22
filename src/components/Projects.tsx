@@ -50,12 +50,10 @@ const Experience = () => {
     <section id="experience" className="py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         
-        {/* Title */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 bg-gradient-secondary bg-clip-text text-transparent">
           Experience
         </h2>
-        
-        {/* Cards */}
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {roles.map((exp, index) => (
             <Card
@@ -63,33 +61,32 @@ const Experience = () => {
               className="bg-card border-border hover:border-primary transition-all duration-300 hover:scale-105 group"
             >
               <CardHeader>
-                {/* Gradient Line */}
                 <div className={`h-2 w-full bg-gradient-to-r ${exp.color} rounded-full mb-4`} />
 
-                <CardTitle className="text-foreground">
-                  {exp.role}
+                {/* EMPHASIZED COMPANY */}
+                <CardTitle className="text-2xl font-bold text-primary tracking-tight">
+                  {exp.company}
                 </CardTitle>
 
-                <CardDescription className="text-foreground/70">
-                  {exp.company} • {exp.period}
+                {/* Role + Period */}
+                <CardDescription className="text-foreground/80 text-sm mt-1">
+                  {exp.role} • {exp.period}
                 </CardDescription>
               </CardHeader>
 
               <CardContent>
-                <p className="text-foreground/80 mb-4">
+                <p className="text-foreground/80 mb-4 mt-1 leading-relaxed">
                   {exp.description}
                 </p>
 
-                <div className="flex">
-                  <Button 
-                    size="sm" 
-                    variant="outline"
-                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-full"
-                  >
-                    <Briefcase className="w-4 h-4 mr-1" />
-                    View Details
-                  </Button>
-                </div>
+                <Button 
+                  size="sm" 
+                  variant="outline"
+                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-full"
+                >
+                  <Briefcase className="w-4 h-4 mr-1" />
+                  View Details
+                </Button>
               </CardContent>
             </Card>
           ))}
