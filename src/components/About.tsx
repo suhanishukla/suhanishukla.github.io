@@ -42,7 +42,7 @@ const About = () => {
                       transition-all duration-300 hover:scale-105"
             onClick={() => window.open('https://lily-power-22d.notion.site/Suhani-s-Blog-2138ee31aa6b80f1ba38c05c15c4db5f', '_blank')}
           >
-            Read my Blog
+            Read my Blog!
           </Button>
         </div>
 
