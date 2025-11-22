@@ -143,7 +143,7 @@ const Experience = () => {
       details: `
       • Wrote Python image filtering scripts to classify and sort mosquito larvae data
       • Co-authored research paper on the accuracy of classifying larvae images using CNNs 
-      • Acted as lead speaker during a virtual presentation of research poster at American Geophysical Union Fall 2022 Conference. 
+      • Acted as lead speaker during a virtual presentation of research poster at American Geophysical Union Fall 2022 Conference
       `,
       skills: ["Python", "PyTorch", "CNNs/CV", "Data cleaning"],
       color: "from-secondary to-primary"
@@ -151,7 +151,7 @@ const Experience = () => {
     {
       company: "AWS Cloud Club @ UCLA",
       role: "Technical Director",
-      period: "2024–Present",
+      period: "2025–Present",
       description:
         "Teach cloud concepts, build AWS-powered solutions, and run technical programs.",
       color: "from-accent to-primary"
@@ -159,9 +159,9 @@ const Experience = () => {
     {
       company: "BruinAI",
       role: "AI Consultant & Events Lead",
-      period: "2024–Present",
+      period: "2023–Present",
       description:
-        "Lead technical workshops, architect ML projects, and support AI initiatives across UCLA.",
+        "Architect ML projects and support AI initiatives across UCLA.",
       details: `
       • Spearheaded UCLA’s first AI club’s external strategy
       • Led partnerships and high-visibility events with DeepLearning.AI, Cisco, and other industry leaders
