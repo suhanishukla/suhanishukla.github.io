@@ -214,8 +214,14 @@ const Experience = () => {
 
             {/* === EXPANDED FULL SCREEN CARD === */}
             {expanded === index && (
-              <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md p-6 flex justify-center overflow-y-auto">
-                <Card className="bg-card border-border max-w-3xl w-full mt-10 mb-10 animate-in fade-in zoom-in duration-300">
+              <div
+                className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md p-6 flex justify-center overflow-y-auto"
+                onClick={() => setExpanded(null)} // CLICK OUTSIDE CLOSES
+              >
+                <Card
+                  className="bg-card border-border max-w-3xl w-full mt-10 mb-10 animate-in fade-in zoom-in duration-300"
+                  onClick={(e) => e.stopPropagation()} // PREVENT CLICK INSIDE FROM CLOSING
+                >
                   <CardHeader>
                     <div className={`h-2 w-full bg-gradient-to-r ${exp.color} rounded-full mb-4`} />
                     <CardTitle className="text-3xl font-bold text-primary">
@@ -231,30 +237,22 @@ const Experience = () => {
                       {exp.details}
                     </p>
 
-                    {/* SKILLS DEVELOPED — MATCHES PROJECT CARDS */}
-                    <div className="flex flex-wrap gap-2 mb-6">
+                    {/* SKILLS SECTION */}
+                    <div className="flex flex-wrap gap-2 mb-4">
                       {exp.skills?.map((skill, i) => (
                         <span
                           key={i}
-                          className="px-3 py-1 bg-muted text-foreground/90 text-sm rounded-full border border-border"
+                          className="px-3 py-1 bg-muted text-foreground text-sm rounded-full border border-border"
                         >
                           {skill}
                         </span>
                       ))}
                     </div>
-
-                    <Button
-                      size="lg"
-                      className="mt-4 w-full bg-primary text-primary-foreground hover:bg-primary/80"
-                      onClick={() => setExpanded(null)}
-                    >
-                      Close
-                    </Button>
                   </CardContent>
-
                 </Card>
               </div>
             )}
+
 
           </div>
         ))}
