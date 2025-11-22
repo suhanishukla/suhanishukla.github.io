@@ -111,12 +111,15 @@ const Experience = () => {
       role: "Software Engineering Intern",
       period: "Summer 2025",
       description: "Automated cloud infrastructure to improve reliability and deployment workflows.",
-      details: `
-      • Built Live Pipeline Template automation using CDK + Ruby  
-      • Designed canary rollback monitoring  
-      • Reduced deployment freshness from 120 days → < 28 days  
+      details: ` 
+      • Built CI/CD automation of deployment pipelines using Live Pipeline Template and AWS CDK 
+      • Migrated legacy LPT pipeline to CDK to modernize Infrastructure as Code scheme 
+      • Designed real-time canary rollback monitoring and composite alarms for safe deployments
+      • Reduced deployment freshness from 120 days to less than 28 days  
       • Improved pipeline reliability and observability  
-      • Collaborated with SDEs across Redshift Console  `,
+      • Collaborated with SDEs across Redshift Console  
+      • Authored detailed runbooks and docs for on-call engineers and future incidents
+      `,
       skills: ["CDK", "LPT", "Ruby", "TypeScript", "CloudWatch"],
       color: "from-primary to-accent"
     },
@@ -127,9 +130,11 @@ const Experience = () => {
       description:
         "Developed hardware diagnostics tools using C++ and gRPC streaming systems.",
       details: `
+      • Developed improvements to hardware custom CLI Diags
       • Built real-time device diagnostics  
-      • Implemented gRPC bidirectional streaming  
-      • Improved embedded performance  
+      • Implemented gRPC bidirectional streaming in all prints and ASIC tests
+      • Streamlined control flow of critical hardware tests
+      • Created custom signal handler integrated with Python front-end to add proper termination with control C
       • Strengthened debugging & test automation  `,
       skills: ["C++", "Python", "gRPC", "Linux", "Bash scripting"],
       color: "from-accent to-secondary"
@@ -154,6 +159,11 @@ const Experience = () => {
       period: "2025–Present",
       description:
         "Teach cloud concepts, build AWS-powered solutions, and run technical programs.",
+      details: `
+      • Helping found UCLA's first AWS Club, a cloud computing org
+      • Leading technical workshops to teach members basics of AWS, cloud computing, and AI/ML 
+      • Creating AWS-hosted projects to demonstrate cloud computing  
+      `,
       color: "from-accent to-primary"
     },
     {
