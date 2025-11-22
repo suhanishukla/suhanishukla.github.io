@@ -232,7 +232,7 @@ const Experience = () => {
                             text-center p-6"
                   onClick={(e) => e.stopPropagation()}
                 >
-                  <CardHeader className="text-center">
+                  <CardHeader className="text-center pb-2">
                     <div className={`h-2 w-full bg-gradient-to-r ${exp.color} rounded-full mb-6`} />
 
                     <CardTitle className="text-4xl font-bold text-primary mb-2">
@@ -244,7 +244,7 @@ const Experience = () => {
                     </CardDescription>
                   </CardHeader>
 
-                  <CardContent className="flex flex-col items-start px-10">
+                  <CardContent className="flex flex-col items-start px-10 pt-0">
 
                     {/* DESCRIPTION — SHIFTED UP & RIGHT */}
                     <div className="w-full max-w-2xl">
