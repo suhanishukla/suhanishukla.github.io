@@ -15,7 +15,7 @@ const About = () => {
     {
       icon: Rocket,
       title: "Learning",
-      description: "Building projects to push my skills and learn new tools."
+      description: "Pushing my skills through hands-on cloud and AI projects."
     }
   ];
 
