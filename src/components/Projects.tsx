@@ -234,12 +234,11 @@ const Experience = () => {
                     </CardDescription>
                   </CardHeader>
 
-                  <CardContent className="text-center">
-                    <p className="whitespace-pre-line text-foreground/90 leading-relaxed text-xl mb-8">
+                  <CardContent className="flex flex-col items-center">
+                    <p className="whitespace-pre-line text-foreground/90 leading-relaxed text-xl mb-8 text-left w-full max-w-2xl mx-auto">
                       {exp.details}
                     </p>
 
-                    {/* SKILLS – centered + larger */}
                     <div className="flex flex-wrap justify-center gap-3 mb-4">
                       {exp.skills?.map((skill, i) => (
                         <span
