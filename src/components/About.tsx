@@ -33,17 +33,16 @@ const About = () => {
           </p>
         </div>
 
-        <div className="flex justify-center mt-1 mb-12">
-          <a
-            href="https://lily-power-22d.notion.site/Suhani-s-Blog-2138ee31aa6b80f1ba38c05c15c4db5f"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-5 py-2 rounded-xl bg-gradient-to-r from-purple-500/20 to-blue-500/20 
-                      text-primary font-medium backdrop-blur-md border border-white/10
-                      hover:scale-105 transition-all duration-200 shadow-lg"
+        <div className="flex justify-center mt-2 mb-14">
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground 
+                      transition-all duration-300 hover:scale-105"
+            onClick={() => window.open('https://lily-power-22d.notion.site/Suhani-s-Blog-2138ee31aa6b80f1ba38c05c15c4db5f', '_blank')}
           >
             Read my Blog
-          </a>
+          </Button>
         </div>
 
 
