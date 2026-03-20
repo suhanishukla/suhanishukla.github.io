@@ -8,6 +8,17 @@ const Experience = () => {
 
   const roles = [
     {
+      company: "Microsoft AI",
+      role: "AI/ML Software Engineering Intern",
+      period: "Summer 2026",
+      description: "Incoming Intern",
+      details: ` 
+
+      `,
+      skills: [],
+      color: "from-secondary to-primary"
+    },
+    {
       company: "Amazon Web Services",
       role: "Software Engineering Intern",
       period: "Summer 2025",
@@ -39,6 +50,21 @@ const Experience = () => {
       color: "from-accent to-secondary"
     },
     {
+      company: "AWS Cloud Club @ UCLA",
+      role: "Co-President",
+      period: "2025–Present",
+      description:
+        "Teach cloud concepts, build AWS-powered solutions, and run technical programs.",
+      details: `
+      • Helping found UCLA's first AWS Club, a cloud computing org
+      • Leading technical workshops to teach members basics of AWS, cloud computing, and AI/ML 
+      • Creating AWS-hosted projects to demonstrate cloud computing  
+      • Visit us at awsclubucla.org
+      `,
+      skills: ["Workshop Creation", "S3", "Lambda", "AWS Bedrock", "Outreach"],
+      color: "from-secondary to-primary"
+    },
+    {
       company: "NASA SEES",
       role: "Research Intern",
       period: "Summer 2022",
@@ -50,20 +76,6 @@ const Experience = () => {
       • Acted as lead speaker during a virtual presentation of research poster at American Geophysical Union Fall 2022 Conference
       `,
       skills: ["Python", "PyTorch", "CNNs/CV", "Data Cleaning"],
-      color: "from-secondary to-primary"
-    },
-    {
-      company: "AWS Cloud Club @ UCLA",
-      role: "Technical Director",
-      period: "2025–Present",
-      description:
-        "Teach cloud concepts, build AWS-powered solutions, and run technical programs.",
-      details: `
-      • Helping found UCLA's first AWS Club, a cloud computing org
-      • Leading technical workshops to teach members basics of AWS, cloud computing, and AI/ML 
-      • Creating AWS-hosted projects to demonstrate cloud computing  
-      `,
-      skills: ["Workshop Creation", "S3", "Lambda", "AWS Bedrock", "Outreach"],
       color: "from-secondary to-primary"
     },
     {
