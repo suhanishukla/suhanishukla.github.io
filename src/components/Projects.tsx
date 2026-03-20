@@ -12,9 +12,7 @@ const Experience = () => {
       role: "AI/ML Software Engineering Intern",
       period: "Summer 2026",
       description: "Incoming Intern",
-      details: ` 
-
-      `,
+      details: `Coming Soon!`,
       skills: [],
       color: "from-secondary to-primary"
     },
@@ -65,20 +63,6 @@ const Experience = () => {
       color: "from-secondary to-primary"
     },
     {
-      company: "NASA SEES",
-      role: "Research Intern",
-      period: "Summer 2022",
-      description:
-        "Created image filtering and ML-based classification tools for environmental data.",
-      details: `
-      • Wrote Python image filtering scripts to classify and sort mosquito larvae data
-      • Co-authored research paper on the accuracy of classifying larvae images using CNNs 
-      • Acted as lead speaker during a virtual presentation of research poster at American Geophysical Union Fall 2022 Conference
-      `,
-      skills: ["Python", "PyTorch", "CNNs/CV", "Data Cleaning"],
-      color: "from-secondary to-primary"
-    },
-    {
       company: "BruinAI",
       role: "AI Consultant & Events Lead",
       period: "2023–Present",
@@ -92,7 +76,22 @@ const Experience = () => {
       `, 
       skills: ["Agile Scrum", "Python", "PyTorch", "LLMs/RAG", "Event Planning"],
       color: "from-secondary to-primary"
-    }
+    },
+    {
+      company: "NASA SEES",
+      role: "Research Intern",
+      period: "Summer 2022",
+      description:
+        "Created image filtering and ML-based classification tools for environmental data.",
+      details: `
+      • Wrote Python image filtering scripts to classify and sort mosquito larvae data
+      • Co-authored research paper on the accuracy of classifying larvae images using CNNs 
+      • Acted as lead speaker during a virtual presentation of research poster at American Geophysical Union Fall 2022 Conference
+      `,
+      skills: ["Python", "PyTorch", "CNNs/CV", "Data Cleaning"],
+      color: "from-secondary to-primary"
+    },
+
   ];
 
   return (
