@@ -43,11 +43,10 @@ Message: ${formData.message}`
   ];
 
   return (
-    <section id="contact" className="py-20 px-6 bg-gradient-accent">
+    <section id="contact" className="px-6 pb-20 pt-8">
       <div className="container mx-auto max-w-4xl">
         
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 
-                       bg-gradient-primary bg-clip-text text-transparent">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-primary">
           Get In Touch
         </h2>
         

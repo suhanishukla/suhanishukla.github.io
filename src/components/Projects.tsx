@@ -9,12 +9,16 @@ const Experience = () => {
   const roles = [
     {
       company: "Microsoft AI",
-      role: "AI/ML Software Engineering Intern",
+      role: "Applied AI/ML Intern",
       period: "Summer 2026",
-      description: "Incoming Intern",
-      details: `Coming Soon!`,
-      skills: [],
-      color: "from-secondary to-primary"
+      description: "Built and evaluated Small Language Models for Bing Generative Search.",
+      details: `
+      • Worked on Small Language Models (SLMs) for query fanout in Bing Generative Search, across training, evals, and serving
+      • Experimented with SFT, RL, distillation, and different reward formulations to improve model quality
+      • Built a Gemma-270M routing model to figure out when additional search fanout would actually help
+      • Improved a key search-quality metric by 3.3%, with resulting models selected for production
+      `,
+      skills: ["Python", "SLMs", "Post-Training", "RL", "Model Evals", "ML Experimentation", "Model Serving"]
     },
     {
       company: "Amazon Web Services",
@@ -28,8 +32,7 @@ const Experience = () => {
       • Reduced deployment freshness from 120 days to less than 28 days  
       • Authored detailed runbooks and docs for on-call engineers
       `,
-      skills: ["CDK", "LPT", "Ruby", "TypeScript", "CloudWatch", "Technical Writing"],
-      color: "from-secondary to-primary"
+      skills: ["CDK", "LPT", "Ruby", "TypeScript", "CloudWatch", "Technical Writing"]
     },
     {
       company: "Nokia",
@@ -44,8 +47,7 @@ const Experience = () => {
       • Streamlined control flow of critical hardware tests
       • Created custom signal handler integrated with Python front-end to add proper termination with control C
       • Strengthened debugging & test automation  `,
-      skills: ["C++", "Python", "gRPC", "Linux", "Bash Scripting"],
-      color: "from-accent to-secondary"
+      skills: ["C++", "Python", "gRPC", "Linux", "Bash Scripting"]
     },
     {
       company: "AWS Cloud Club @ UCLA",
@@ -59,8 +61,7 @@ const Experience = () => {
       • Creating AWS-hosted projects to demonstrate cloud computing  
       • Visit us at awsclubucla.org
       `,
-      skills: ["Workshop Creation", "S3", "Lambda", "AWS Bedrock", "Outreach"],
-      color: "from-secondary to-primary"
+      skills: ["Workshop Creation", "S3", "Lambda", "AWS Bedrock", "Outreach"]
     },
     {
       company: "BruinAI",
@@ -74,8 +75,7 @@ const Experience = () => {
       • Proposed AI-driven enhancements for social media startup Carrot, ensuring user-centric design and technical feasibility 
       • Collaborated with Anderson MBAs at startup Nortera, using Agile Scrum translating complex HR compliance and EDI data into scalable, data-driven dashboards for risk detection
       `, 
-      skills: ["Agile Scrum", "Python", "PyTorch", "LLMs/RAG", "Event Planning"],
-      color: "from-secondary to-primary"
+      skills: ["Agile Scrum", "Python", "PyTorch", "LLMs/RAG", "Event Planning"]
     },
     {
       company: "NASA SEES",
@@ -88,27 +88,21 @@ const Experience = () => {
       • Co-authored research paper on the accuracy of classifying larvae images using CNNs 
       • Acted as lead speaker during a virtual presentation of research poster at American Geophysical Union Fall 2022 Conference
       `,
-      skills: ["Python", "PyTorch", "CNNs/CV", "Data Cleaning"],
-      color: "from-secondary to-primary"
+      skills: ["Python", "PyTorch", "CNNs/CV", "Data Cleaning"]
     },
 
   ];
 
   return (
-    <section id="experience" className="py-24 px-6">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-secondary bg-clip-text text-transparent">
-        Experience
-      </h2>
-
+    <section id="experience" className="px-6 pb-24 pt-12">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {roles.map((exp, index) => (
           <div key={index} className="relative">
             
             {/* === COLLAPSED CARD === */}
             {expanded !== index && (
-              <Card className="bg-card border-border hover:border-primary transition-all duration-300 hover:scale-105">
+              <Card className="flex h-full flex-col bg-card border-border transition-all duration-300 hover:scale-105 hover:border-primary">
                 <CardHeader>
-                  <div className={`h-2 w-full bg-gradient-to-r ${exp.color} rounded-full mb-4`} />
                   <CardTitle className="text-2xl font-bold text-primary">
                     {exp.company}
                   </CardTitle>
@@ -117,8 +111,8 @@ const Experience = () => {
                   </CardDescription>
                 </CardHeader>
 
-                <CardContent>
-                  <p className="text-foreground/80 mb-4">{exp.description}</p>
+                <CardContent className="flex flex-1 flex-col">
+                  <p className="mb-4 flex-1 text-foreground/80">{exp.description}</p>
 
                   <Button
                     size="sm"
@@ -144,8 +138,6 @@ const Experience = () => {
                   onClick={(e) => e.stopPropagation()}
                 >
                   <CardHeader className="text-center pb-2">
-                    <div className={`h-2 w-full bg-gradient-to-r ${exp.color} rounded-full mb-6`} />
-
                     <CardTitle className="text-4xl font-bold text-primary mb-2">
                       {exp.company}
                     </CardTitle>
