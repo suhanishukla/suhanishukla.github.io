@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Briefcase } from "lucide-react";
 
 const Experience = () => {
   const [expanded, setExpanded] = useState<number | null>(null);
@@ -32,7 +31,7 @@ const Experience = () => {
       • Reduced deployment freshness from 120 days to less than 28 days  
       • Authored detailed runbooks and docs for on-call engineers
       `,
-      skills: ["CDK", "LPT", "Ruby", "TypeScript", "CloudWatch", "Technical Writing"]
+      skills: ["CDK", "LPT", "Ruby", "TypeScript", "CloudWatch", "Infra as Code"]
     },
     {
       company: "Nokia",
@@ -55,27 +54,28 @@ const Experience = () => {
       period: "2025–Present",
       description:
         "Teach cloud concepts, build AWS-powered solutions, and run technical programs.",
-      details: `
-      • Helping found UCLA's first AWS Club, a cloud computing org
-      • Leading technical workshops to teach members basics of AWS, cloud computing, and AI/ML 
-      • Creating AWS-hosted projects to demonstrate cloud computing  
-      • Visit us at awsclubucla.org
-      `,
+      details: <><br />
+        • Co-founded UCLA&apos;s first cloud computing club, growing the team from 6 to 30+ active members<br />
+        • Built project partnerships with AWS and UCLA DTS, giving members opportunities to build cloud solutions for real stakeholders<br />
+        • Lead workshops on AWS, cloud infra, and AI. Organized <a href="https://www.linkedin.com/feed/update/urn:li:activity:7447401621988425729" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">Architect the Cloud</a> (90+ students and 10+ industry speakers)<br />
+        • Visit us at <a href="https://awsclubucla.org" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">awsclubucla.org</a>
+      </>,
       skills: ["Workshop Creation", "S3", "Lambda", "AWS Bedrock", "Outreach"]
     },
     {
-      company: "BruinAI",
+      company: "Bruin AI",
       role: "AI Consultant & Events Lead",
       period: "2023–Present",
       description:
         "Architect ML projects and support AI initiatives across UCLA.",
       details: `
-      • Spearheaded UCLA’s first AI club’s external strategy
-      • Led partnerships and high-visibility events with DeepLearning.AI, Cisco, and other industry leaders
-      • Proposed AI-driven enhancements for social media startup Carrot, ensuring user-centric design and technical feasibility 
-      • Collaborated with Anderson MBAs at startup Nortera, using Agile Scrum translating complex HR compliance and EDI data into scalable, data-driven dashboards for risk detection
+      • Implement AI consulting projects for external clients, turning real business problems into production AI tools and software
+      • Drove Bruin AI's largest client engagement to date, a $30K AI-native marketing and CRM platform for a UGC marketing agency
+      • Built a production RAG-based HR assistant now used by 100+ employees at wealth advisory firm
+      • Worked directly with clients and Anderson MBA teams to translate business needs into tech requirements, designs, and products
+      • Helped shape Bruin AI's community through industry partnerships, events, and technical programming
       `, 
-      skills: ["Agile Scrum", "Python", "PyTorch", "LLMs/RAG", "Event Planning"]
+      skills: ["Python", "LLMs/RAG", "Full-Stack", "AI Consulting"]
     },
     {
       company: "NASA SEES",
@@ -120,7 +120,6 @@ const Experience = () => {
                     onClick={() => setExpanded(index)}
                     className="border-primary text-primary hover:bg-primary hover:text-primary-foreground w-full"
                   >
-                    <Briefcase className="w-4 h-4 mr-1" />
                     View Details
                   </Button>
                 </CardContent>
