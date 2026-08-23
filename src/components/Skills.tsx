@@ -3,7 +3,7 @@ const Skills = () => {
 
   return (
 
-    <section id="resume" className="px-6 pb-24 pt-0">
+    <section id="resume" className="px-6 pb-24 pt-8">
       {/* PDF VIEWER BOX */}
       <div className="max-w-4xl mx-auto bg-card border border-border rounded-xl shadow-xl 
                       p-4 h-[80vh]">

@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Github, Linkedin } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -36,12 +35,6 @@ Message: ${formData.message}`
     setFormData({ name: "", email: "", message: "" });
   };
 
-  const socialLinks = [
-    { icon: Github, href: "https://github.com/suhanishukla", label: "GitHub" },
-    { icon: Linkedin, href: "https://www.linkedin.com/in/suhani-s/", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:suhanishukla@g.ucla.edu", label: "Email" }
-  ];
-
   return (
     <section id="contact" className="px-6 pb-20 pt-8">
       <div className="container mx-auto max-w-4xl">
@@ -50,35 +43,7 @@ Message: ${formData.message}`
           Get In Touch
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-12">
-          
-          {/* SOCIAL LINKS */}
-          <div className="mt-20 ml-24">
-            <h3 className="text-2xl font-semibold mb-4 text-foreground text-center">
-              Feel free to reach out!
-            </h3>
-            
-            <div className="flex gap-4 justify-center">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 bg-card border border-border rounded-lg 
-                             flex items-center justify-center 
-                             hover:border-primary hover:scale-110 
-                             transition-all duration-300"
-                  aria-label={social.label}
-                >
-                  <social.icon className="w-5 h-5 text-foreground" />
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* CONTACT FORM */}
-          <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="mx-auto max-w-md space-y-4">
             <Input
               placeholder="Your Name"
               value={formData.name}
@@ -111,9 +76,7 @@ Message: ${formData.message}`
             >
               Send Message
             </Button>
-          </form>
-
-        </div>
+        </form>
       </div>
     </section>
   );
